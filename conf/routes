@@ -1,0 +1,15 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+# この定義を追加
+GET     /sample1                    controllers.SampleController.sample1
+GET     /sample2                    controllers.SampleController.sample2
+GET     /say                        controllers.SampleController.say
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+    
